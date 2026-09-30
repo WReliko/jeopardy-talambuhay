@@ -3,53 +3,54 @@ import type { PlayerData, Question } from '$lib/index';
 const playerData: PlayerData[] = [];
 const TIME_LEFT = 8; // seconds
 const sortQuestions = (questions: { points: number; question: string; answer: string; imgSrc?: string; }[]) => questions.sort((a, b) => a.points - b.points).map(q => ({ ...q, answered: false, buzzers: [] as string[] }));
-const pastQuestions: Question[] = sortQuestions([
+const hobbyQuestions: Question[] = sortQuestions([
     {
         points: 100,
-        question: 'What US state is the Land of Lincoln?',
-        answer: 'Illinois',
+        question: 'Which instrument does William play?',
+        imgSrc: "[placeholder]",
+        answer: 'Piano',
     },
     {
         points: 200,
         question:
-            'Which country\'s flag is this?',
-        imgSrc: "https://cdn.britannica.com/34/4034-050-91EE1BCF/Flag-Myanmar.jpg",
-        answer: 'Myanmar',
+            'Which country did Tennis originate from?',
+        imgSrc: "[placeholder]",
+        answer: 'France',
     },
     {
         points: 300,
         question:
-            'What Ivy League school has the highest Native American enrollment (a whoppping 1%)?',
-        answer: 'Dartmouth',
+            'What\'s the most used language in coding?',
+        answer: 'Javascript',
     },
     {
         points: 400,
-        question: 'Who wrote the Critique of Pure Reason?',
-        answer: 'Immanuel Kant',
+        question: 'What year was Nintendo created?',
+        answer: '1889',
     }
 ]);
 
-const presentQuestions: Question[] =
+const favQuestions: Question[] =
     sortQuestions([
         {
             points: 400,
             question:
-                'This is Donu, a character from which video game?',
-            imgSrc: '/donu-gif.gif',
-            answer: 'Slay the Spire',
+                'What is William\'s favorite RPG series.',
+            imgSrc: "[placeholder]",
+            answer: 'Xenoblade',
         },
         {
             points: 100,
             question:
-                'Tahini is made from which seed?',
-            imgSrc: 'https://www.aforkstale.com/wp-content/uploads/how-to-make-homemade-tahini-1200-x-1200.jpg',
-            answer: 'Sesame',
+                'William\'s favorite ice cream flavor.',
+            imgSrc: "[placeholder]",
+            answer: 'Coffee',
         },
         {
             points: 200,
-            question: 'What programming language is the below code?',
-            imgSrc: '/programming_language.png',
-            answer: 'Javascript',
+            question: 'The name of this game:',
+            imgSrc: "[placeholder]",
+            answer: 'Minecraft',
         },
         {
             points: 300,
@@ -60,7 +61,7 @@ const presentQuestions: Question[] =
             answer: 'Italy',
         }
     ]);
-const futureQuestions: Question[] = sortQuestions([
+const lifeQuestions: Question[] = sortQuestions([
     {
         points: 100,
         question:
@@ -68,22 +69,47 @@ const futureQuestions: Question[] = sortQuestions([
         imgSrc:
             "https://static.mathigon.org/cms/a8141a111490d026fa6578a4933d1d47.png",
         answer: 'Isometric',
+    },
+    {
+        points: 200,
+        question:
+            'This type of 2D drawing allows you to see the sides of a 3D object at the same scale.',
+        imgSrc:
+            "https://static.mathigon.org/cms/a8141a111490d026fa6578a4933d1d47.png",
+        answer: 'Isometric',
+    },
+    {
+        points: 300,
+        question:
+            'This type of 2D drawing allows you to see the sides of a 3D object at the same scale.',
+        imgSrc:
+            "https://static.mathigon.org/cms/a8141a111490d026fa6578a4933d1d47.png",
+        answer: 'Isometric',
+    },
+    {
+        points: 400,
+        question:
+            'This type of 2D drawing allows you to see the sides of a 3D object at the same scale.',
+        imgSrc:
+            "https://static.mathigon.org/cms/a8141a111490d026fa6578a4933d1d47.png",
+        answer: 'Isometric',
     }
+
 ]);
 
 
 const categories = [
     {
-        title: 'Ms Feng\'s Past',
-        questions: pastQuestions
+        title: 'William\'s Hobbies',
+        questions: hobbyQuestions
     },
     {
-        title: `Ms. Feng's Present`,
-        questions: presentQuestions
+        title: `William's Favorites`,
+        questions: favQuestions
     },
     {
-        title: "Ms. Feng's Future",
-        questions: futureQuestions
+        title: "William's Present Life",
+        questions: lifeQuestions
     }
 ];
 
