@@ -35,9 +35,9 @@ const favQuestions: Question[] =
         {
             points: 400,
             question:
-                'What is William\'s favorite RPG series.',
+                'Shulk is a character from which RPG Series',
             imgSrc: "[placeholder]",
-            answer: 'Xenoblade',
+            answer: 'Xenoblade Chronicles',
         },
         {
             points: 100,
@@ -55,43 +55,36 @@ const favQuestions: Question[] =
         {
             points: 300,
             question:
-                'This country is home to the Dolomites, which are a mountain range that has historical \'via ferratas\', iron cables and rungs, to aid traversing the peaks?',
-            imgSrc:
-                "https://laguidalpina.it/cdn/shop/products/ferrata-marmolada-cresta-ovest-Cristiano-Gregnanin-Guida-Alpina-Certificata-Dolomiti-5.jpg?v=1738870778",
-            answer: 'Italy',
+                'Chartreuse is a shade of which color?',
+            answer: 'Green',
         }
     ]);
 const lifeQuestions: Question[] = sortQuestions([
     {
         points: 100,
         question:
-            'This type of 2D drawing allows you to see the sides of a 3D object at the same scale.',
-        imgSrc:
-            "https://static.mathigon.org/cms/a8141a111490d026fa6578a4933d1d47.png",
-        answer: 'Isometric',
+        'This country has the second largest population in the world',
+        
+        answer: 'China',
     },
     {
         points: 200,
         question:
-            'This type of 2D drawing allows you to see the sides of a 3D object at the same scale.',
-        imgSrc:
-            "https://static.mathigon.org/cms/a8141a111490d026fa6578a4933d1d47.png",
-        answer: 'Isometric',
+            'Solve this equation for x: 6x + 12 = 264',
+        answer: '42',
     },
     {
         points: 300,
         question:
-            'This type of 2D drawing allows you to see the sides of a 3D object at the same scale.',
-        imgSrc:
-            "https://static.mathigon.org/cms/a8141a111490d026fa6578a4933d1d47.png",
-        answer: 'Isometric',
+        'This big tech company was founded in 1976 and is known for its network of devices.',    
+        answer: 'Apple',
+            
     },
     {
         points: 400,
         question:
             'This type of 2D drawing allows you to see the sides of a 3D object at the same scale.',
-        imgSrc:
-            "https://static.mathigon.org/cms/a8141a111490d026fa6578a4933d1d47.png",
+        imgSrc: "[placeholder]",
         answer: 'Isometric',
     }
 
