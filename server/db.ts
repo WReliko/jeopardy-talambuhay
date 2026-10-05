@@ -6,15 +6,13 @@ const sortQuestions = (questions: { points: number; question: string; answer: st
 const hobbyQuestions: Question[] = sortQuestions([
     {
         points: 100,
-        question: 'Which instrument does William play?',
-        imgSrc: "[placeholder]",
-        answer: 'Piano',
+        question: 'Which famous piano player\'s first name is Wolfgang',
+        answer: 'Mozart',
     },
     {
         points: 200,
         question:
             'Which country did Tennis originate from?',
-        imgSrc: "[placeholder]",
         answer: 'France',
     },
     {
@@ -36,20 +34,20 @@ const favQuestions: Question[] =
             points: 400,
             question:
                 'Shulk is a character from which RPG Series',
-            imgSrc: "[placeholder]",
+            imgSrc: "Shulk.png",
             answer: 'Xenoblade Chronicles',
         },
         {
             points: 100,
             question:
                 'William\'s favorite ice cream flavor.',
-            imgSrc: "[placeholder]",
+            imgSrc: "coffee_beans.jpg",
             answer: 'Coffee',
         },
         {
             points: 200,
             question: 'The name of this game:',
-            imgSrc: "[placeholder]",
+            imgSrc: "minecraft.avif",
             answer: 'Minecraft',
         },
         {
@@ -83,9 +81,9 @@ const lifeQuestions: Question[] = sortQuestions([
     {
         points: 400,
         question:
-            'This type of 2D drawing allows you to see the sides of a 3D object at the same scale.',
-        imgSrc: "[placeholder]",
-        answer: 'Isometric',
+            'What is the name of this piece',
+        imgSrc: "Rondo.png",
+        answer: 'Rondo Alla Turca',
     }
 
 ]);
