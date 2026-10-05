@@ -90,7 +90,7 @@
 		};
 
 		const handleTimeUp = () => {
-			new Audio('https://www.myinstants.com/media/sounds/times-up.mp3').play();
+			new Audio('https://www.myinstants.com/media/sounds/vine-boom.mp3').play();
 		};
 
 		socket.on('buzzed', handleBuzzed);
@@ -134,7 +134,7 @@
 	$effect(() => {
 		// side effects, use this rune sparingly! like playing sounds.
 		if (isCorrect) {
-			new Audio('https://www.myinstants.com/media/sounds/rightanswer.mp3').play();
+			new Audio('https://www.myinstants.com/media/sounds/anime-wow-sound-effect.mp3').play();
 		}
 	});
 </script>
@@ -213,7 +213,7 @@
 		left: 0;
 		width: 100vw;
 		height: 100vh;
-		background: rgba(0, 0, 0, 0.9);
+		background: rgba(79, 100, 118, 0.9);
 		display: grid;
 		place-items: center;
 	}
@@ -237,7 +237,7 @@
 
 	.buzz-button {
 		background: var(--point-color);
-		color: #000;
+		color: #ff3c3c;
 		padding: 1rem 2rem;
 		border: none;
 		border-radius: 5px;
